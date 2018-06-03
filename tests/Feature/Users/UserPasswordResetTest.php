@@ -21,7 +21,7 @@ class UserPasswordResetTest extends TestCase
         $this->disableExceptionHandling();
         $user = factory(User::class)->create(); //default password is 'secret'
 
-        $response = $this->actingAs($user)->post("/admin/reset-password", [
+        $response = $this->actingAs($user)->post("/admin/reset-user-password", [
             'current_password' => 'secret',
             'password' => 'new_password',
             'password_confirmation' => 'new_password'
@@ -38,7 +38,7 @@ class UserPasswordResetTest extends TestCase
     {
         $user = factory(User::class)->create(); //default password is 'secret'
 
-        $response = $this->actingAs($user)->post("/admin/reset-password", [
+        $response = $this->actingAs($user)->post("/admin/reset-user-password", [
             'current_password' => 'INCORRECT_PASSWORD',
             'password' => 'new_password',
             'password_confirmation' => 'new_password'
@@ -56,7 +56,7 @@ class UserPasswordResetTest extends TestCase
     {
         $user = factory(User::class)->create(); //default password is 'secret'
 
-        $response = $this->actingAs($user)->post("/admin/reset-password", [
+        $response = $this->actingAs($user)->post("/admin/reset-user-password", [
             'current_password' => 'secret',
             'password' => '12345',
             'password_confirmation' => '12345'
@@ -74,7 +74,7 @@ class UserPasswordResetTest extends TestCase
     {
         $user = factory(User::class)->create(); //default password is 'secret'
 
-        $response = $this->actingAs($user)->post("/admin/reset-password", [
+        $response = $this->actingAs($user)->post("/admin/reset-user-password", [
             'current_password' => 'secret',
             'password' => '',
             'password_confirmation' => ''
@@ -92,7 +92,7 @@ class UserPasswordResetTest extends TestCase
     {
         $user = factory(User::class)->create(); //default password is 'secret'
 
-        $response = $this->actingAs($user)->post("/admin/reset-password", [
+        $response = $this->actingAs($user)->post("/admin/reset-user-password", [
             'current_password' => 'secret',
             'password' => 'new_password',
             'password_confirmation' => 'NOT_MATCHING_CONFIRMATION'

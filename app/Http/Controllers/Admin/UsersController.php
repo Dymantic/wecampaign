@@ -8,6 +8,13 @@ use App\Http\Controllers\Controller;
 
 class UsersController extends Controller
 {
+
+    public function index()
+    {
+        $users = User::all();
+        return view('admin.users.index', ['users' => $users]);
+    }
+
     public function store()
     {
         $user_data = request()->validate([

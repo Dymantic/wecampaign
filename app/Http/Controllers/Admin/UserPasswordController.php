@@ -14,7 +14,7 @@ class UserPasswordController extends Controller
             'current_password' => new MatchesUserPassword(),
             'password' => ['min:6', 'required', 'confirmed']
         ]);
-        
+
         auth()->user()->update(['password' => bcrypt(request('password'))]);
     }
 }
