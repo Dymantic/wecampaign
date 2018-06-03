@@ -17,4 +17,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin
     Route::post('users', 'UsersController@store');
     Route::post('users/{user}', 'UsersController@update');
     Route::delete('users/{user}', 'UsersController@delete');
+
+    Route::post('reset-password', 'UserPasswordController@update');
 });
