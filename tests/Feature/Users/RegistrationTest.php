@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Users;
 
+use App\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -27,6 +28,26 @@ class RegistrationTest extends TestCase
             'name'                  => 'Testy Person',
             'email'                 => 'testy@person.test',
         ]);
+    }
+
+    /**
+     *@test
+     */
+    public function registering_a_new_user_responds_with_the_new_user_data()
+    {
+        $this->disableExceptionHandling();
+        $response = $this->asLoggedInUser()->json("POST", "/admin/users", [
+            'name'                  => 'Testy Person',
+            'email'                 => 'testy@person.test',
+            'password'              => 'password',
+            'password_confirmation' => 'password'
+        ]);
+
+        $response->assertStatus(201);
+
+        $user = User::where('email', 'testy@person.test')->first()->fresh();
+
+        $this->assertEquals($user->toArray(), $response->decodeResponseJson());
     }
 
     /**

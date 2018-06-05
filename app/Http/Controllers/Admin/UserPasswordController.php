@@ -11,10 +11,12 @@ class UserPasswordController extends Controller
     public function update()
     {
         request()->validate([
-            'current_password' => new MatchesUserPassword(),
+            'current_password' => ['required', new MatchesUserPassword()],
             'password' => ['min:6', 'required', 'confirmed']
         ]);
 
         auth()->user()->update(['password' => bcrypt(request('password'))]);
+
+        return redirect('/admin');
     }
 }

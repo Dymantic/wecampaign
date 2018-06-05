@@ -28,6 +28,7 @@
             </svg>
             <h1 class="col-grey tc">Reset Your Password</h1>
             {!! csrf_field() !!}
+            <p class="my-6">This will reset your password for your Wecampaign admin account. Once your password is reset you will automatically be logged back in.</p>
             <input type="hidden"
                    name="token"
                    value="{{ $token }}">
@@ -66,7 +67,7 @@
             </div>
             <div class="my-4">
                 <button type="submit"
-                        class="h-12 bg-green text-white tracking-wide uppercase font-bold w-full block">Reset Password
+                        class="h-12 bg-black text-white tracking-wide uppercase font-bold w-full block">Reset Password
                 </button>
             </div>
         </form>

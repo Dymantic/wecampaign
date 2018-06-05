@@ -16,14 +16,14 @@
           CONTENT="NOINDEX, NOFOLLOW">
     @yield('head')
 </head>
-<body class="h-full">
+<body class="h-full leading-normal">
 <div id="app" class="min-h-full font-sans flex flex-col">
     @if(Auth::check())
         @include('admin.partials.navbar')
     @else
         @include('admin.partials.fakenavbar')
     @endif
-    <div class="container flex-1">
+    <div class="max-w-xl w-full px-4 mx-auto flex-1">
         @yield('content')
     </div>
 </div>

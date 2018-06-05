@@ -26,9 +26,26 @@ class UserPasswordResetTest extends TestCase
             'password' => 'new_password',
             'password_confirmation' => 'new_password'
         ]);
-        $response->assertStatus(200);
+        $response->assertStatus(302);
 
         $this->assertTrue(Hash::check('new_password', $user->fresh()->password));
+    }
+
+    /**
+     *@test
+     */
+    public function the_current_password_is_required()
+    {
+        $user = factory(User::class)->create(); //default password is 'secret'
+
+        $response = $this->actingAs($user)->post("/admin/reset-user-password", [
+            'password' => 'new_password',
+            'password_confirmation' => 'new_password'
+        ]);
+        $response->assertStatus(302);
+        $response->assertSessionHasErrors('current_password');
+
+        $this->assertTrue(Hash::check('secret', $user->fresh()->password));
     }
 
     /**

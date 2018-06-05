@@ -35,6 +35,46 @@ class UpdateUserTest extends TestCase
     /**
      *@test
      */
+    public function updating_a_user_responds_with_fresh_user_data()
+    {
+        $this->disableExceptionHandling();
+        $user = factory(User::class)->create(['name' => 'Old Name', 'email' => 'old@email.test']);
+
+        $response = $this->asLoggedInUser()->json("POST", "/admin/users/{$user->id}", [
+            'name' => 'New Name',
+            'email' => 'new@email.test'
+        ]);
+
+        $response->assertStatus(200);
+
+        $this->assertEquals($user->fresh()->toArray(), $response->decodeResponseJson());
+    }
+
+    /**
+     *@test
+     */
+    public function the_name_field_can_be_updated_and_email_remains_same()
+    {
+        $this->disableExceptionHandling();
+        $user = factory(User::class)->create(['name' => 'Old Name', 'email' => 'old@email.test']);
+
+        $response = $this->asLoggedInUser()->json("POST", "/admin/users/{$user->id}", [
+            'name' => 'New Name',
+            'email' => 'old@email.test'
+        ]);
+
+        $response->assertStatus(200);
+
+        $this->assertDatabaseHas('users', [
+            'id' => $user->id,
+            'name' => 'New Name',
+            'email' => 'old@email.test'
+        ]);
+    }
+
+    /**
+     *@test
+     */
     public function the_name_filed_is_required()
     {
         $this->assertValidationError(['name' => '']);

@@ -28,10 +28,10 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="w-full block my-4 bg-green text-white uppercase tracking-wide h-12">Login</button>
+                    <button type="submit" class="w-full block my-4 bg-black text-white uppercase tracking-wide h-12">Login</button>
                 </div>
                 <div class="my-4 text-center">
-                    <a class="text-sm" href="/admin/forgot-password">Forgot password?</a>
+                    <a class="text-sm text-grey" href="/admin/forgot-password">Forgot password?</a>
                 </div>
             </form>
         </div>
