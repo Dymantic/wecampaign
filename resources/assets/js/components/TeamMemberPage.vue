@@ -18,9 +18,9 @@
                 ></team-member-form>
             </div>
         </div>
-        <div class="flex">
+        <div class="flex pt-12">
             <div class="w-1/2">
-                <div class="my-12">
+                <div class="mb-12">
                     <p class="text-xs uppercase tracking-wide font-black text-black">Korean</p>
                     <p class="text-lg text-black">{{ name_ko }}</p>
                     <p class="mt-3 italic text-grey-dark">{{ bio_ko }}</p>
@@ -31,15 +31,19 @@
                     <p class="mt-3 italic text-grey-dark">{{ bio_en }}</p>
                 </div>
             </div>
-            <div class="w-1/2">
-                <p class="text-xs uppercase tracking-wide font-black text-black">Avatar</p>
-                <image-upload :upload-url="`/admin/team-members/${member.id}/avatar`"
-                              :delete-url="`/admin/team-members/${member.id}/avatar`"
-                              :initial-src="member.avatar_thumb_src"
-                              :aspect-x="3"
-                              :aspect-y="3"
-                              class="w-64 mx-auto"
-                ></image-upload>
+            <div class="w-1/2 profile-image">
+                <div class="w-64 mx-auto">
+                    <p class="text-xs uppercase tracking-wide font-black text-black">Avatar</p>
+
+                    <image-upload :upload-url="`/admin/team-members/${member.id}/avatar`"
+                                  :delete-url="`/admin/team-members/${member.id}/avatar`"
+                                  :initial-src="member.avatar_thumb_src"
+                                  :aspect-x="3"
+                                  :aspect-y="3"
+                                  class=""
+                    ></image-upload>
+                    <p class="my-4 text-sm"><strong>Note: </strong>Use an image of at least 300 x 300px. The image will be cropped in the center if it is not a square.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -89,6 +93,9 @@
     }
 </script>
 
-<style scoped lang="scss" type="text/scss">
-
+<style lang="css" type="text/css">
+    .profile-image img {
+        border-radius: 50%;
+        display: block;
+    }
 </style>

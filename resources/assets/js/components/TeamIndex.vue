@@ -12,7 +12,7 @@
             </div>
         </div>
         <div>
-            <a :href="`/admin/team-members/${member.id}`" v-for="member in members" :key="member.id" class="my-12 w-full block no-underline hover:bg-grey-lighter p-2 rounded">
+            <a :href="`/admin/team-members/${member.id}`" v-for="member in members" :key="member.id" class="mb-12 w-full block no-underline hover:bg-grey-lighter p-2 rounded">
                 <div class="flex max-w-full items-center">
                     <img :src="member.avatar_thumb_src" height="120px" class="rounded-full">
                     <div class="flex-1 max-w-full pl-8">
