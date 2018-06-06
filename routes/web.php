@@ -11,6 +11,16 @@
 |
 */
 
+Route::group(['prefix' => LaravelLocalization::setLocale()], function() {
+    Route::view('/', 'front.home.page');
+    Route::view('services', 'front.services.page');
+    Route::view('team', 'front.team.page');
+    Route::view('contact', 'front.contact.page');
+});
+
+Route::post('contact', 'ContactMessageController@receive');
+
+
 Route::view('admin/login', 'admin.auth.login')->name('login');
 Route::post('admin/login', 'Auth\LoginController@login');
 Route::post('admin/logout', 'Auth\LoginController@logout');
