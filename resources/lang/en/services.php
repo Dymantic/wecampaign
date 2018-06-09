@@ -7,7 +7,7 @@ return [
         'description' => 'WeCampaign offers world-class services to both the individual and organised movements who are looking to make a change.'
     ],
 
-    'individual' => [
+    'individuals' => [
         'nav_text' => 'For you',
         'heading' => 'To Individuals',
 

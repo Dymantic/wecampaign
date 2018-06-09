@@ -1,5 +1,17 @@
 @extends('front.base')
 
+@section('title', trans('services.meta.title'))
+
+@section('head')
+    @include('front.partials.ogmeta', [
+        'ogImage' => '',
+        'ogDescription' => trans('services.meta.description'),
+        'ogTitle' => trans('services.meta.title')
+    ])
+@endsection
+
 @section('content')
-    Service page in {{ app()->getLocale() }}
+    @include('front.services.sub-nav')
+    @include('front.services.individuals')
+    @include('front.services.organizations')
 @endsection

@@ -1,12 +1,16 @@
 @extends('front.base')
 
-@section('content')
-    Team page in {{ app()->getLocale() }}
+@section('title', trans('team.meta.title'))
 
-    @foreach($team as $member)
-        <div>
-            <p>{{ $member->name }}</p>
-            <p>{{ $member->bio }}</p>
-        </div>
-    @endforeach
+@section('head')
+    @include('front.partials.ogmeta', [
+        'ogImage' => '',
+        'ogDescription' => trans('team.meta.description'),
+        'ogTitle' => trans('team.meta.title')
+    ])
+@endsection
+
+@section('content')
+    @include('front.team.intro')
+    @include('front.team.team-members')
 @endsection
