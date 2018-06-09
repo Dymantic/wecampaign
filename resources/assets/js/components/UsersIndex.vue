@@ -6,6 +6,8 @@
                 <user-form url="/admin/users" button-text="Add User" :form-object="blank_user" @user-persisted="addNewUser" form-title="Add a new admin user" :use-passwords="true"></user-form>
             </div>
         </div>
+        <p class="mt-12 mb-4">These are the admin users for the site. All users have equal abilities, meaning they can all create new users, log in, and such.</p>
+        <p class="mb-12">When adding a new user, choose them a password to start with, and inform them of their login details. A user may change their password once they have logged in.</p>
         <div>
             <div v-for="user in users" :key="user.id" class="my-12 pl-4 border-l-4 border-black">
                 <div class="flex items-center text-black">

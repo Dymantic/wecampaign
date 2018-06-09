@@ -21,6 +21,16 @@ class TeamMember extends Model implements HasMedia
 
     protected $casts = ['published' => 'boolean'];
 
+    public function getNameAttribute()
+    {
+        return app()->getLocale() === 'ko' ? $this->name_ko : $this->name_en;
+    }
+
+    public function getBioAttribute()
+    {
+        return app()->getLocale() === 'ko' ? $this->bio_ko : $this->bio_en;
+    }
+
     public function publish()
     {
         $this->published = true;
@@ -77,7 +87,7 @@ class TeamMember extends Model implements HasMedia
             'bio_ko'  => $this->bio_ko,
             'avatar_thumb_src' => $this->avatar('thumb'),
             'avatar_src' => $this->avatar(),
-            'published' => false
+            'published' => !! $this->published
         ];
     }
 }

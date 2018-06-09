@@ -105,6 +105,29 @@ class TeamMemberTest extends TestCase
         $this->assertEquals($expected, $member->fresh()->toArray());
     }
 
+    /**
+     *@test
+     */
+    public function a_tem_member_has_a_locale_aware_getter_for_the_name_and_bio()
+    {
+        $member = factory(TeamMember::class)->create($this->validMemberAttributes())->fresh();
+
+        app()->setLocale('ko');
+
+        $this->assertEquals($this->validMemberAttributes()['name_ko'], $member->name);
+        $this->assertEquals($this->validMemberAttributes()['bio_ko'], $member->bio);
+
+        app()->setLocale('en');
+
+        $this->assertEquals($this->validMemberAttributes()['name_en'], $member->name);
+        $this->assertEquals($this->validMemberAttributes()['bio_en'], $member->bio);
+
+        app()->setLocale('fr'); //default should be english
+
+        $this->assertEquals($this->validMemberAttributes()['name_en'], $member->name);
+        $this->assertEquals($this->validMemberAttributes()['bio_en'], $member->bio);
+    }
+
     private function validMemberAttributes($overrides = [])
     {
         $defaults = [

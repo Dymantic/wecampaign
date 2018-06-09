@@ -18,6 +18,23 @@
                 ></team-member-form>
             </div>
         </div>
+        <div class="=my-8 flex items-center justify-between">
+            <div>
+                <p class="text-xs uppercase tracking-wide font-black text-black">Status</p>
+                <p>{{ published_status }}</p>
+            </div>
+            <div>
+                <toggle-switch label="Publish?"
+                               on-url="/admin/published-team-members"
+                               :post-body='{"member_id": member.id}'
+                               :off-url="`/admin/published-team-members/${member.id}`"
+                               @toggle-switched-on="published = true"
+                               @toggle-switched-off="published = false"
+                               :switch-state="published"
+                               class="text-black"
+                ></toggle-switch>
+            </div>
+        </div>
         <div class="flex pt-12">
             <div class="w-1/2">
                 <div class="mb-12">
@@ -66,9 +83,16 @@
                 name_en: '',
                 name_ko: '',
                 bio_en: '',
-                bio_ko: ''
+                bio_ko: '',
+                published: false,
             };
 
+        },
+
+        computed: {
+          published_status() {
+              return this.published ? 'This profile is public and will be shown on the site' : 'This profile is currently private and cannot be seen on the site';
+          }
         },
 
         created() {
@@ -76,6 +100,7 @@
             this.name_ko = this.member.name_ko || '';
             this.bio_en = this.member.bio_en || '';
             this.bio_ko = this.member.bio_ko || '';
+            this.published = !! this.member.published
         },
 
         methods: {

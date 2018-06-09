@@ -3,7 +3,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 import {VueForm} from "@dymantic/vue-forms";
-import {Dropdown, Modal, DeleteModal} from "@dymantic/vuetilities";
+import {Dropdown, Modal, DeleteModal, ToggleSwitch} from "@dymantic/vuetilities";
 import {ImageUpload} from "@dymantic/imagineer";
 import UsersIndex from "./components/UsersIndex";
 import UserForm from "./components/UserForm";
@@ -12,6 +12,7 @@ import TeamIndex from "./components/TeamIndex";
 import TeamMemberForm from "./components/TeamMemberForm"
 import TeamMemberPage from "./components/TeamMemberPage";
 
+Vue.component('toggle-switch', ToggleSwitch);
 Vue.component('vue-form', VueForm);
 Vue.component('dropdown-item', Dropdown);
 Vue.component('modal', Modal);

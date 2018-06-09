@@ -14,6 +14,8 @@ require("laravel-mix-tailwind");
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
+   .js('resources/assets/js/front.js', 'public/js')
    .less('resources/assets/less/app.less', 'public/css')
+   .less('resources/assets/less/fapp.less', 'public/css')
    .tailwind()
     .version();
