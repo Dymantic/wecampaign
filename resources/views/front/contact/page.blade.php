@@ -16,6 +16,16 @@
         <p>{{ trans('contact.intro.content') }}</p>
     </section>
     <div>
-        <contact-form v-cloak></contact-form>
+        <p>the svg</p>
+
+    </div>
+    <div>
+        <contact-form v-cloak
+                      name-label="{{ trans('contact.form.name') }}"
+                      email-label="{{ trans('contact.form.email') }}"
+                      phone-label="{{ trans('contact.form.phone_number') }}"
+                      message-label="{{ trans('contact.form.message_text') }}"
+                      submit-button-text="{{ trans('contact.form.submit') }}"
+        ></contact-form>
     </div>
 @endsection
