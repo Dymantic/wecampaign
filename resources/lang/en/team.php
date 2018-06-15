@@ -7,7 +7,7 @@ return [
     ],
 
     'intro' => [
-        'heading' => 'Meet the Team',
-        'content' => 'Meet the passionate and tireless individuals who make up our fantastic team here at WeCampaign'
+        'heading' => 'Meet the team',
+        'content' => 'The hard work and passion behind WeCampaign'
     ]
 ];

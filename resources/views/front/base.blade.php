@@ -9,9 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ mix('css/fapp.css') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="https://use.typekit.net/iqd7uky.css">
     @yield('head')
 </head>
-<body  class="">
+<body  class="leading-normal font-serif {{ $pageClasses ?? '' }}">
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
@@ -19,7 +20,7 @@
     @include('front.partials.navbar')
     @yield('content')
 </div>
-{{--@include('front.partials.footer')--}}
+@include('front.partials.footer')
 
 
 <script src="{{ mix('js/front.js') }}"></script>

@@ -8,8 +8,8 @@ return [
     ],
 
     'individuals' => [
-        'nav_text' => 'For you',
-        'heading' => 'To Individuals',
+        'nav_text' => 'Individuals',
+        'heading' => 'For Individuals',
 
         'information_access' => [
             'heading' => 'information access',
@@ -40,8 +40,8 @@ public.'
     ],
 
     'organizations' => [
-        'nav_text' => 'For your organization',
-        'heading' => 'To Organizations',
+        'nav_text' => 'Organizations',
+        'heading' => 'For Organizations',
 
         'data_analysis' => [
             'heading' => 'data analysis',

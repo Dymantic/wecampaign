@@ -1,4 +1,4 @@
-@extends('front.base')
+@extends('front.base', ['pageClasses' => 'services-page'])
 
 @section('title', trans('services.meta.title'))
 
@@ -14,4 +14,5 @@
     @include('front.services.sub-nav')
     @include('front.services.individuals')
     @include('front.services.organizations')
+    @include('front.partials.page-ender')
 @endsection

@@ -1,4 +1,4 @@
-@extends('front.base')
+@extends('front.base', ['pageClasses' => 'home-page'])
 
 @section('title', trans('homepage.meta.title'))
 
@@ -15,4 +15,5 @@
     @include('front.home.about')
     @include('front.home.goals')
     @include('front.home.values')
+    @include('front.home.app-preview')
 @endsection

@@ -27,6 +27,8 @@
         "@dymantic/imagineer": "^0.1.1",
         "@dymantic/vue-forms": "^0.2.6",
         "@dymantic/vuetilities": "^0.3.3",
-        "laravel-mix-tailwind": "^0.1.0"
+        "jump.js": "^1.0.2",
+        "laravel-mix-tailwind": "^0.1.0",
+        "lodash.throttle": "^4.1.1"
     }
 }

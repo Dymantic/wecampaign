@@ -13,4 +13,5 @@
 @section('content')
     @include('front.team.intro')
     @include('front.team.team-members')
+    @include('front.partials.page-ender')
 @endsection

@@ -1,8 +1,7 @@
+@import "variables";
+
 @tailwind preflight;
 
-.btn {
-@apply .px-2 .py-1 .uppercase .tracking-wide .shadow .text-sm .rounded;
-}
 
 .btn-primary {
 @apply .bg-black .text-white;
@@ -28,14 +27,130 @@
 @apply .text-grey-darker;
 }
 
+.h1 {
+  @apply .font-sans .font-bold .text-5xl;
+}
+
+
+
+.h2 {
+  @apply .font-sans .font-bold .text-2xl;
+}
+
+.blurb {
+  @apply .font-sans .font-normal .text-3xl;
+}
+
+.button-font {
+  @apply .font-sans .font-normal .text-base;
+}
+
+.body {
+  @apply .font-serif .font-normal .text-base;
+}
+
+.body-lg {
+  @apply .font-sans .font-normal .text-2xl;
+}
+
+.nav-font {
+  @apply .font-sans .font-normal .text-sm;
+}
+
+.btn {
+  @apply .h-12 px-8 rounded shadow;
+}
+
+@media screen and (max-width: 576px) {
+  .h1 {
+  @apply .text-4xl .px-4;
+  }
+
+  .h2 {
+  @apply .text-xl;
+  }
+
+  .blurb {
+  @apply .text-2xl;
+  }
+
+  .button-font {
+  @apply .font-sans .font-normal .text-base;
+  }
+
+  .body {
+  @apply .font-serif .font-normal .text-base;
+  }
+
+  .body-lg {
+  @apply .text-xl;
+  }
+}
+
+.order-0 {
+    order: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+
 @tailwind utilities;
 
-svg {
-  fill: currentColor;
-}
+//svg {
+//  fill: currentColor;
+//}
 
 [v-cloak] {
   display: none;
 }
 
+body {
+  padding-top: 6rem;
+}
 
+
+
+body.home-page {
+  background: linear-gradient(-190deg, transparent 60%, #5ccff2 60%), linear-gradient(-190deg, white 15%, transparent 15%), linear-gradient(-190deg, transparent 40%, white 40%), radial-gradient(circle at top 20% right 0%, #31518b 10%, #2d3775 70%);
+}
+
+body.services-page {
+  background: linear-gradient(-190deg, transparent 78%, white 78%), linear-gradient(-190deg, transparent 58%, #d39bff 58%), linear-gradient(-190deg, transparent 43%, white 43%), linear-gradient(-190deg, transparent 23%, #8bdbf2 23%), linear-gradient(-190deg, transparent 15%, white 15%), linear-gradient(-270deg, #d39bff, rgba(255, 149, 243, 0.59));
+}
+
+
+.gr-bottom-blue {
+  background-blend-mode: color;
+  background: radial-gradient(circle at top right, #31518b 10%, #2d3775 70%), linear-gradient(-190deg, white 60%, transparent 60%);
+}
+
+.gr-bottom-blue-light {
+  background: linear-gradient(-190deg, transparent 60%, #5ccff2 60%);
+}
+
+.gr-top-blue {
+  background: linear-gradient(-190deg, #2d3775 40%, transparent 40%);
+}
+
+.main-navbar {
+  transition: .3s;
+}
+
+.scrolled .main-navbar {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+
+
+}
+
+@media screen and (max-width: 572px) {
+  body {
+    padding-top: 3rem;
+  }
+}

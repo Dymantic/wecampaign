@@ -12,20 +12,20 @@
 
 @section('content')
     <section>
-        <h1>{{ trans('contact.intro.heading') }}</h1>
-        <p>{{ trans('contact.intro.content') }}</p>
-    </section>
-    <div>
-        <p>the svg</p>
+        <div class="max-w-lg mx-auto text-center px-4 py-28">
+            <h1 class="h1 text-blue-dark mb-4">{{ trans('contact.intro.heading') }}</h1>
+            <p class="body-lg text-blue-dark">{{ trans('contact.intro.content') }}</p>
+        </div>
 
-    </div>
-    <div>
+    </section>
+    <div class="px-4">
         <contact-form v-cloak
                       name-label="{{ trans('contact.form.name') }}"
                       email-label="{{ trans('contact.form.email') }}"
                       phone-label="{{ trans('contact.form.phone_number') }}"
                       message-label="{{ trans('contact.form.message_text') }}"
                       submit-button-text="{{ trans('contact.form.submit') }}"
+                      success-text="{{ trans('contact.form.success_text') }}"
         ></contact-form>
     </div>
 @endsection

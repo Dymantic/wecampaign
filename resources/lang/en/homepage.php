@@ -8,6 +8,7 @@ return [
     ],
 
     'banner' => [
+        'heading' => 'The new way to campaign',
         'vision_statement' => 'WeCampaign strives to be the backbone of democratization movements by empowering people to mobilize and to create a more free and open world.'
     ],
 
@@ -18,7 +19,7 @@ return [
     ],
 
     'goals' => [
-        'heading'     => 'Our Goals',
+        'heading'     => 'What is WeCampaign',
         'voice'       => [
             'heading' => 'give voice',
             'content' => 'WeCampaign gives voice to all affected population by allowing the public to participate in social movements easily and directly.'
@@ -35,7 +36,7 @@ information.'
     ],
 
     'values' => [
-        'heading'    => 'Our Values',
+        'heading'    => 'Why WeCampaign?',
         'continuity' => [
             'heading'    => 'Continuity',
             'part_one'   => 'WeCampaign monitors effectiveness and sustainability of solutions once they are implemented.',
@@ -54,5 +55,9 @@ information.'
         'part_one' => 'WeCampaign strives to be the backbone of democratization movements.',
         'part_two' => 'WeCampaign strives to empower people to mobilize and to create a more free and open
 world.'
+    ],
+    
+    'app_preview' => [
+        'heading' => 'App coming soon!' 
     ]
 ];
