@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/iqd7uky.css">
     @yield('head')
 </head>
-<body  class="leading-normal font-serif {{ $pageClasses ?? '' }}">
+<body  class="leading-normal font-serif {{ $pageClasses ?? '' }} text-black">
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
