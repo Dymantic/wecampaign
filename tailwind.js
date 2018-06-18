@@ -428,6 +428,7 @@ module.exports = {
         '10': '2.5rem',
         '12': '3rem',
         '16': '4rem',
+        '20': '5rem',
         '24': '6rem',
         '32': '8rem',
         '48': '12rem',
@@ -475,9 +476,11 @@ module.exports = {
         '10': '2.5rem',
         '12': '3rem',
         '16': '4rem',
+        '20': '5rem',
         '24': '6rem',
         '32': '8rem',
         '48': '12rem',
+        '56': '14rem',
         '64': '16rem',
         'full': '100%',
         'screen': '100vh'
@@ -520,6 +523,7 @@ module.exports = {
 
     minHeight: {
         '0': '0',
+        '56': '14rem',
         'full': '100%',
         'screen': '100vh'
     },

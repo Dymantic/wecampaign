@@ -6,6 +6,11 @@ return [
         'title' => 'Wecampaign Services',
         'description' => 'WeCampaign offers world-class services to both the individual and organised movements who are looking to make a change.'
     ],
+    
+    'intro' => [
+        'heading' => 'Our Services',
+        'subheading' => 'We offer amazing campaigning services to both individuals and organisations.'
+    ],
 
     'individuals' => [
         'nav_text' => 'Individuals',

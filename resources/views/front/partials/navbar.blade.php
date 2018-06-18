@@ -1,4 +1,4 @@
-<div class="main-navbar fixed pin-t w-full flex justify-between items-center h-16 md:h-24 px-4 md:px-8">
+<div class="main-navbar fixed pin-t w-full flex justify-between items-center h-16 md:h-20 px-4 md:px-8">
     <div class="">
         <a href="{{ localRoute('/') }}">@include('front.svgicons.home_icon')</a>
     </div>

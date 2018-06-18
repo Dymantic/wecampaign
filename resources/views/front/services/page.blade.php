@@ -11,6 +11,7 @@
 @endsection
 
 @section('content')
+    @include('front.services.intro')
     @include('front.services.sub-nav')
     @include('front.services.individuals')
     @include('front.services.organizations')

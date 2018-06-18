@@ -19,7 +19,7 @@ return [
     ],
 
     'goals' => [
-        'heading'     => 'What is WeCampaign',
+        'heading'     => 'What is WeCampaign?',
         'voice'       => [
             'heading' => 'give voice',
             'content' => 'WeCampaign gives voice to all affected population by allowing the public to participate in social movements easily and directly.'
