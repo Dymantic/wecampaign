@@ -50,6 +50,9 @@ let colors = {
     'danger-dark': '#cc1f1a',
     'danger': '#e3342f',
 
+    'orange': '#F27021',
+    'orange-soft': '#FA9050',
+
     'off-white': '#fffefa',
     'white': '#ffffff',
 
@@ -64,15 +67,12 @@ let colors = {
 
 
 
-    'blue-dark': '#2d3775',
-    'blue': '#29315b',
-    'blue-light': '#5ccff2',
+    'blue-dark': '#173A62',
+    'blue-light': '#63BAE5',
 
 
 
-    'purple': '#6a58ad',
 
-    'pink': '#f75abb',
 };
 
 module.exports = {
@@ -546,7 +546,7 @@ module.exports = {
 
     maxWidth: {
         'xs': '20rem',
-        'narrow': '23rem',
+        'narrow': '25rem',
         'sm': '30rem',
         'md': '40rem',
         'lg': '50rem',

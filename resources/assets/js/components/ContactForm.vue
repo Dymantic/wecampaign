@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-sm mx-auto pb-28">
+    <div class="max-w-sm mx-auto">
         <vue-form url="/contact"
                   :form-attributes="contactForm"
                   :use-custom-submit="true"
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="my-4 text-center">
-                    <button class="btn button-font text-white" type="submit" :disabled="waiting" :class="waiting ? 'shadow-none' : 'bg-blue-light hover:bg-blue-dark'">
+                    <button class="btn button-font text-white" type="submit" :disabled="waiting" :class="waiting ? 'shadow-none' : 'bg-orange hover:bg-orange-soft'">
                         <span v-if="!waiting">{{ submitButtonText }}</span>
                         <div v-if="waiting" class="bouncing-loader h-12">
                             <div></div>

@@ -33,7 +33,7 @@ return [
             'content' => 'Public users directly communicate with all relevant actors, from organizers to politicians.'
         ],
         'sns_function' => [
-            'heading' => 'sns function',
+            'heading' => 'SNS function',
             'content' => 'Users check out what campaigns and social issues their friends are following or participating.'
         ],
         'monitoring' => [

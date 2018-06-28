@@ -1,1 +1,1 @@
-<footer class="h-64 bg-blue"></footer>
+<footer class="h-64 bg-blue-dark"></footer>

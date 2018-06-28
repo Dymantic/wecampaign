@@ -8,7 +8,7 @@ return [
 
     'intro' => [
         'heading' => 'Get in touch',
-        'content' => 'We\'d love to hear from you'
+        'content' => 'We\'d love to hear from you!'
     ],
 
     'form' => [

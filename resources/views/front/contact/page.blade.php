@@ -1,4 +1,4 @@
-@extends('front.base')
+@extends('front.base', ['pageClasses' => 'gr-blue-light'])
 
 @section('title', trans('contact.meta.title'))
 
@@ -11,6 +11,7 @@
 @endsection
 
 @section('content')
+    <div class="body-topper"></div>
     <section>
         <div class="max-w-lg mx-auto text-center px-4 py-28">
             <h1 class="h1 text-blue-dark mb-4">{{ trans('contact.intro.heading') }}</h1>
@@ -18,7 +19,7 @@
         </div>
 
     </section>
-    <div class="px-4">
+    <div class="p-8 bg-white max-w-lg mx-auto shadow mb-28">
         <contact-form v-cloak
                       name-label="{{ trans('contact.form.name') }}"
                       email-label="{{ trans('contact.form.email') }}"

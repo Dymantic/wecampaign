@@ -1,0 +1,31 @@
+@media screen and (max-width: 572px) {
+  .main-navbar {
+    .nav-inner {
+      display: block;
+      position: absolute;
+      top: 4rem;
+      background: white;
+      width: 100%;
+      left: 0;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      transform: rotateX(90deg);
+      transform-origin: top;
+      transition: .3s;
+
+      a {
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+      }
+    }
+
+    &.expose {
+      background: white;
+      box-shadow: none;
+      .nav-inner {
+        transform: rotateX(0deg);
+      }
+    }
+  }
+
+}
