@@ -18,8 +18,8 @@
     </div>
 </div>
 <div class="bg-off-white max-w-narrow mx-auto h-64 flex flex-col rounded shadow my-12">
-    <div class="flex justify-center items-center pt-6">
-        @include('front.svgicons.organization_3', ['svgClass' => 'h-6'])
+    <div class="flex justify-center items-center pt-4">
+        @include('front.svgicons.organization_3', ['svgClass' => 'h-8'])
     </div>
     <div class="flex flex-col items-center justify-center p-8 pt-4">
         <h2 class="h2 capitalize">{{ trans('services.organizations.monitoring.heading') }}</h2>
@@ -27,8 +27,8 @@
     </div>
 </div>
 <div class="bg-off-white max-w-narrow mx-auto h-64 flex flex-col rounded shadow my-12">
-    <div class="flex justify-center items-center pt-6">
-        @include('front.svgicons.organization_4', ['svgClass' => 'h-6'])
+    <div class="flex justify-center items-center pt-4">
+        @include('front.svgicons.organization_4', ['svgClass' => 'h-8'])
     </div>
     <div class="flex flex-col items-center justify-center p-8 pt-4">
         <h2 class="h2 capitalize">{{ trans('services.organizations.donation_culture.heading') }}</h2>
