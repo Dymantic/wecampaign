@@ -1,5 +1,5 @@
 <div class="main-navbar fixed pin-t w-full flex justify-between items-center h-16 md:h-20 px-4 md:px-8 z-50">
-    <div class="">
+    <div class="text-blue-dark">
         <a href="{{ localRoute('/') }}">@include('front.svgicons.home_icon')</a>
     </div>
     <div class="flex-1 flex justify-end items-center nav-inner">

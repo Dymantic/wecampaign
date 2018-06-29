@@ -8,7 +8,7 @@ return [
     ],
 
     'banner' => [
-        'heading' => 'The new way to campaign',
+        'heading' => 'The new way to campaign.',
         'vision_statement' => 'WeCampaign strives to be the backbone of democratization movements by empowering people to mobilize and to create a more free and open world.'
     ],
 

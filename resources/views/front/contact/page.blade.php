@@ -19,7 +19,7 @@
         </div>
 
     </section>
-    <div class="p-8 bg-white max-w-lg mx-auto shadow mb-28">
+    <div class="p-8 bg-white max-w-lg mx-auto shadow mb-28 rounded">
         <contact-form v-cloak
                       name-label="{{ trans('contact.form.name') }}"
                       email-label="{{ trans('contact.form.email') }}"
