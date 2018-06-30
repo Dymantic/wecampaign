@@ -59,14 +59,14 @@ let colors = {
     'black': '#2b3336',
     'grey-darkest': '#49484b',
     'grey-darker': '#606f7b',
-    'grey-dark': '#8795a1',
+    'grey-dark': '#949492',
     'grey': '#bdbbbc',
     'grey-light': '#dae1e7',
     'grey-lighter': '#f1f5f8',
     'grey-lightest': '#f8fafc',
 
 
-
+    'blue-darker': '#293144',
     'blue-dark': '#173A62',
     'blue-light': '#63BAE5',
 
