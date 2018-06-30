@@ -1,4 +1,4 @@
-@extends('front.base', ['pageClasses' => 'home-page'])
+@extends('front.base', ['pageClasses' => 'bg-white'])
 
 @section('title', trans('homepage.meta.title'))
 
