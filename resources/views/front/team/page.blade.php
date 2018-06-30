@@ -1,4 +1,4 @@
-@extends('front.base')
+@extends('front.base', ['pageClasses' => 'bg-white'])
 
 @section('title', trans('team.meta.title'))
 
