@@ -2,9 +2,9 @@
     <div class="flex flex-col md:flex-row justify-between pb-12 max-w-2xl mx-auto">
         <div class="md:w-1/3 mb-8">
             <p class="text-orange-soft text-2xl text-center md:text-left mb-4">Contact</p>
-            <p class="text-sm text-center md:text-left text-blue-light">사업자등록번호:718-87-01251</p>
+            <p class="text-sm text-center md:text-left text-blue-light">사업자등록번호: 718-87-01251</p>
             <p class="text-sm text-center md:text-left text-blue-light">문의메일: info@wecampaign.co.kr</p>
-            <p class="text-sm text-center md:text-left text-blue-light">위캠페인 주식회사 l 대표자명 강지은 l</p>
+            <p class="text-sm text-center md:text-left text-blue-light">위캠페인 주식회사 l 대표자명 강지은</p>
             <p class="text-sm text-center md:text-left text-blue-light">서울 강남구 테헤란로 82길 15, 1887호</p>
         </div>
         <div class="md:w-1/3 mb-8">

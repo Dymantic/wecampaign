@@ -9,12 +9,12 @@ return [
 
     'banner' => [
         'heading' => 'The new way to campaign.',
-        'vision_statement' => 'WeCampaign strives to be the backbone of democratization movements by empowering people to mobilize and to create a more free and open world.'
+        'vision_statement' => 'WeCampaign uses information technology to empower and mobilize people to make everlasting impacts.'
     ],
 
     'about_us' => [
         'heading'  => 'About us',
-        'part_one' => 'WeCampaign ensures social campaigns and movements to leave everlasting impacts by structuring information flow and organizing relevant actors from the onset of social campaigns.',
+        'part_one' => 'WeCampaign ensures social campaigns and movements to leave  <strong>everlasting impacts</strong> by <strong>structuring information flow</strong> and organizing relevant actors from the onset of social campaigns.',
         'part_two' => 'We strive to represent all affected population, set clear and attainable goals, and provide continuity as social campaigns progress.'
     ],
 
@@ -37,17 +37,21 @@ information.'
 
     'values' => [
         'heading'    => 'Why WeCampaign?',
+        'assurance' => [
+            'heading' => 'Assurance',
+            'content' => 'WeCampaign monitors effectiveness and sustainability of solutions once they are implemented.'
+        ],
+        'permanence' => [
+            'heading' => 'Permanence',
+            'content' => 'We remain actively engaged until solutions are self-sustainable to ensure no recurrences arise in the future.'
+        ],
         'continuity' => [
             'heading'    => 'Continuity',
-            'part_one'   => 'WeCampaign monitors effectiveness and sustainability of solutions once they are implemented.',
-            'part_two'   => 'We remain actively engaged until solutions are self-sustainable to ensure no recurrences arise in the future.',
-            'part_three' => 'Our technology will provide continuity during social movements and find sustainable solutions to social issues.'
+            'content' => 'Our technology will match sustainable solutions to social issues and provide continuity during social movements.'
         ],
-
-
         'transparency' => [
             'heading'  => 'Transparency',
-            'content' => 'The system of rewarding transparency will encourage organizations to spend more on the issue and create a healthy “giving” culture. WeCampaign enables the public to see how their donations were spent.'
+            'content' => 'The system of rewarding transparency will encourage organizations to spend more on issues and create a healthy “giving” culture. WeCampaign enables the public to see how their donations were spent.'
         ],
     ],
 

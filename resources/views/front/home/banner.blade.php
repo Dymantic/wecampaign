@@ -1,4 +1,4 @@
-<section class="gr-blue">
+<section class="gr-blue-purple">
     <div class="body-topper"></div>
     <div class="max-w-xl mx-auto px-4 py-28">
         <div class="max-w-md">

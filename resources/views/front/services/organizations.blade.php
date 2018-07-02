@@ -1,6 +1,15 @@
 <p class="body-lg text-center text-blue-dark mb-16">{{ trans('services.organizations.heading') }}</p>
 <div class="bg-off-white max-w-narrow mx-auto h-64 flex flex-col rounded shadow my-12">
     <div class="flex justify-center items-center pt-4">
+        @include('front.svgicons.platform', ['svgClass' => 'h-8'])
+    </div>
+    <div class="flex flex-col items-center justify-center p-8 pt-4">
+        <h2 class="h2 capitalize">{{ trans('services.organizations.all_in_one_platform.heading') }}</h2>
+        <p class="body mt-2 text-center max-w-xs mx-auto">{{ trans('services.organizations.all_in_one_platform.content') }}</p>
+    </div>
+</div>
+<div class="bg-off-white max-w-narrow mx-auto h-64 flex flex-col rounded shadow my-12">
+    <div class="flex justify-center items-center pt-4">
         @include('front.svgicons.organization_1', ['svgClass' => 'h-8'])
     </div>
     <div class="flex flex-col items-center justify-center p-8 pt-4">
@@ -15,6 +24,15 @@
     <div class="flex flex-col items-center justify-center p-8 pt-4">
         <h2 class="h2 capitalize">{{ trans('services.organizations.networking.heading') }}</h2>
         <p class="body mt-2 text-center max-w-xs mx-auto">{{ trans('services.organizations.networking.content') }}</p>
+    </div>
+</div>
+<div class="bg-off-white max-w-narrow mx-auto h-64 flex flex-col rounded shadow my-12">
+    <div class="flex justify-center items-center pt-4">
+        @include('front.svgicons.services.org_comm_channel', ['svgClass' => 'h-8'])
+    </div>
+    <div class="flex flex-col items-center justify-center p-8 pt-4">
+        <h2 class="h2 capitalize">{{ trans('services.organizations.communication_channel.heading') }}</h2>
+        <p class="body mt-2 text-center max-w-xs mx-auto">{{ trans('services.organizations.communication_channel.content') }}</p>
     </div>
 </div>
 <div class="bg-off-white max-w-narrow mx-auto h-64 flex flex-col rounded shadow my-12">

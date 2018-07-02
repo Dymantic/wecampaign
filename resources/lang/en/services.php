@@ -38,8 +38,7 @@ return [
         ],
         'monitoring' => [
             'heading' => 'monitoring',
-            'content' => 'Once solutions are in place, we produce reports on effectiveness and sustainability for the
-public.'
+            'content' => 'Once solutions are in place, we produce reports on effectiveness and sustainability of the solutions.'
         ]
 
     ],
@@ -67,6 +66,14 @@ organizers can utilize.'
         'donation_culture' => [
             'heading' => 'the "new" donation culture',
             'content' => 'Our easier donation process and promotion of transparency increase the amount of donations.'
+        ],
+        'all_in_one_platform' => [
+            'heading' => 'All-in-one Platform',
+            'content' => 'Managing campaigns, networking, marketing, fundraising, analyzing data, and other related services are integrated into one place.'
+        ],
+        'communication_channel' => [
+            'heading' => 'Communication Channel',
+            'content' => 'Organizations directly communicate with the public and other key actors.'
         ]
     ]
 ];
