@@ -1,4 +1,4 @@
-<section class="gr-blue-light">
+<section class="gr-purple-haze">
     <div class="max-w-xl px-4 mx-auto py-28">
         <h1 class="text-center h1 text-blue-dark mb-20">@lang('homepage.goals.heading')</h1>
         <div class="flex flex-col md:flex-row justify-between items-stretch mx-4 md:mx-0">

@@ -70,7 +70,7 @@ let colors = {
     'blue-dark': '#173A62',
     'blue-light': '#63BAE5',
 
-    'purple': '#9791F2'
+    'purple': '#8470CF'
 
 
 

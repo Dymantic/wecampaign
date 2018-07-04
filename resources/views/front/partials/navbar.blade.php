@@ -1,6 +1,6 @@
 <div class="main-navbar fixed pin-t w-full flex justify-between items-center h-16 md:h-20 px-4 md:px-8 z-50">
     <div>
-        <a class="text-blue-dark hover:text-purple" href="{{ localRoute('/') }}">@include('front.svgicons.home_icon')</a>
+        <a class="text-blue-dark hover:text-blue-light" href="{{ localRoute('/') }}">@include('front.svgicons.home_icon')</a>
     </div>
     <div class="flex-1 flex justify-end items-center nav-inner">
         <a class="no-underline @activeclass('service') hover:underline uppercase nav-font mx-4 md:mx-8" href="{{ localRoute('/services') }}">{{ trans('navbar.links.services') }}</a>

@@ -1,4 +1,4 @@
-@extends('front.base', ['pageClasses' => 'gr-blue-light'])
+@extends('front.base', ['pageClasses' => 'gr-purple-haze'])
 
 @section('title', trans('team.meta.title'))
 
@@ -15,6 +15,6 @@
     @include('front.team.intro')
     @include('front.team.team-members')
     <img src="/images/the_team.jpg"
-         alt="The WeCampaign team together" class="max-w-md mx-auto w-full my-20 block">
+         alt="The WeCampaign team together" class="max-w-md bg-off-white p-8 shadow rounded mx-auto w-full my-20 block">
     @include('front.partials.page-ender')
 @endsection

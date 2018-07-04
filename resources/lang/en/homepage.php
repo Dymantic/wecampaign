@@ -8,8 +8,8 @@ return [
     ],
 
     'banner' => [
-        'heading' => 'The new way to campaign.',
-        'vision_statement' => 'WeCampaign uses information technology to empower and mobilize people to make everlasting impacts.'
+        'heading' => 'The new way to campaign',
+        'vision_statement' => 'WeCampaign uses information technology to empower and mobilize the public'
     ],
 
     'about_us' => [

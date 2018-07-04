@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Blade::directive('activeclass', function ($path_fragment) {
-            return "<?php echo str_contains(Request::path(), $path_fragment) ? 'text-orange' : 'text-blue-dark'; ?>";
+            return "<?php echo str_contains(Request::path(), $path_fragment) ? 'text-blue-light' : 'text-blue-dark'; ?>";
         });
     }
 
