@@ -68,7 +68,8 @@ let colors = {
     'blue-light': '#63BAE5',
 
     'purple': '#8470CF',
-    'pink': '#fad2f5'
+    'pink': '#fad2f5',
+    'pink-light': '#d6caf2'
 
 
 

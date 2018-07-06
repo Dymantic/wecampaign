@@ -23,5 +23,5 @@
         </div>
     </div>
     <p class="text-center text-xs text-grey-dark">&copy; {{ (new DateTime)->format('Y') }}. All Rights Reserved. Brilliantly Built by
-        <a href="https://dymanticdesign.com" class="text-grey-dark hover:text-orange-soft no-underline">Dymantic Design</a></p>
+        <a href="https://dymanticdesign.com" class="text-grey-dark hover:text-blue-light no-underline">Dymantic Design</a></p>
 </footer>

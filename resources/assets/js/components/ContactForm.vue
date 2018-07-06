@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="my-4 text-center">
-                    <button class="btn button-font text-white" type="submit" :disabled="waiting" :class="waiting ? 'shadow-none' : 'bg-pink hover:bg-purple'">
+                    <button class="btn button-font text-white" type="submit" :disabled="waiting" :class="waiting ? 'shadow-none' : 'bg-pink hover:bg-pink-light'">
                         <span v-if="!waiting">{{ submitButtonText }}</span>
                         <div v-if="waiting" class="bouncing-loader h-12">
                             <div></div>

@@ -33,7 +33,7 @@ Route::post('admin/reset-password', 'Auth\ResetPasswordController@reset')->name(
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin'], function() {
 
-    Route::view('/', 'admin.dashboard');
+    Route::redirect('/', 'admin/team-members');
 
     Route::get('users', 'UsersController@index');
     Route::get('users/{user}', 'UsersController@show');
