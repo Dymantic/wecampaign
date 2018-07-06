@@ -50,9 +50,6 @@ let colors = {
     'danger-dark': '#cc1f1a',
     'danger': '#e3342f',
 
-    'orange': '#F29B5C',
-    'orange-soft': '#F28638',
-
     'off-white': '#fffefa',
     'white': '#ffffff',
 
@@ -70,7 +67,8 @@ let colors = {
     'blue-dark': '#173A62',
     'blue-light': '#63BAE5',
 
-    'purple': '#8470CF'
+    'purple': '#8470CF',
+    'pink': '#fad2f5'
 
 
 
