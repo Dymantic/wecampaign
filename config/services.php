@@ -36,7 +36,7 @@ return [
     ],
 
     'google' => [
-        'analytics_id' => 'xxxxxxx'
+        'analytics_id' => env('GA_TRACKING_ID')
     ]
 
 ];
