@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ mix('css/fapp.css') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://use.typekit.net/iqd7uky.css">
+    <meta name="google-site-verification" content="MiGoHEdgAgGVtZpenwI85cEq9fwqYHwPDfZPHXW1cGQ" />
     @yield('head')
 </head>
 <body  class="leading-normal font-serif {{ $pageClasses ?? '' }} text-black">
