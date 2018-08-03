@@ -4,7 +4,7 @@
 
 @section('head')
     @include('front.partials.ogmeta', [
-        'ogImage' => '',
+        'ogImage' => url('images/wecampaign_sharing_image.jpg'),
         'ogDescription' => trans('services.meta.description'),
         'ogTitle' => trans('services.meta.title')
     ])
