@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="https://use.typekit.net/iqd7uky.css">
     <meta name="google-site-verification" content="MiGoHEdgAgGVtZpenwI85cEq9fwqYHwPDfZPHXW1cGQ" />
     @yield('head')
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#d7cae4">
+    <meta name="theme-color" content="#d7cae4">
 </head>
 <body  class="leading-normal font-serif {{ $pageClasses ?? '' }} text-black">
 <!--[if lte IE 9]>
