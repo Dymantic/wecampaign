@@ -14,7 +14,7 @@
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect']], function() {
     Route::view('/', 'front.home.page');
     Route::view('services', 'front.services.page');
-    Route::get('team', 'PagesController@team');
+    // Route::get('team', 'PagesController@team');
     Route::view('contact', 'front.contact.page');
 });
 

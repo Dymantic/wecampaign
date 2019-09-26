@@ -4,7 +4,7 @@
     </div>
     <div class="flex-1 flex justify-end items-center nav-inner">
         <a class="no-underline @activeclass('service') hover:underline uppercase nav-font mx-4 md:mx-8" href="{{ localRoute('/services') }}">{{ trans('navbar.links.services') }}</a>
-        <a class="no-underline @activeclass('team') hover:underline uppercase nav-font mx-4 md:mx-8" href="{{ localRoute('/team') }}">{{ trans('navbar.links.team') }}</a>
+        {{-- <a class="no-underline @activeclass('team') hover:underline uppercase nav-font mx-4 md:mx-8" href="{{ localRoute('/team') }}">{{ trans('navbar.links.team') }}</a> --}}
         <a class="no-underline @activeclass('contact') hover:underline uppercase nav-font mx-4 md:mx-8" href="{{ localRoute('/contact') }}">{{ trans('navbar.links.contact') }}</a>
     </div>
     <div class="nav-trigger md:hidden">
